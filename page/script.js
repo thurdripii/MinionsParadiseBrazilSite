@@ -1,16 +1,20 @@
 
+"use strict";
+
 const menuToggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav");
 
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
-    const aberto = nav.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(aberto));
+    const isOpen = nav.classList.toggle("open");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
     menuToggle.setAttribute(
       "aria-label",
-      aberto ? "Fechar menu" : "Abrir menu"
+      isOpen ? "Fechar menu" : "Abrir menu"
     );
-    menuToggle.textContent = aberto ? "✕" : "☰";
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
   });
 
   nav.querySelectorAll("a").forEach((link) => {
@@ -23,16 +27,8 @@ if (menuToggle && nav) {
   });
 }
 
-const year = document.getElementById("year");
+const yearElement = document.getElementById("year");
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
-
-// Atualize este endereço se criar um repositório separado
-// para o código público do site.
-const githubLink = document.getElementById("github-link");
-
-if (githubLink) {
-  githubLink.href = "https://github.com/thurdripii";
+if (yearElement) {
+  yearElement.textContent = String(new Date().getFullYear());
 }
