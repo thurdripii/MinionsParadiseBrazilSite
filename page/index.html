@@ -4,223 +4,292 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffcf24">
-  <meta name="description" content="Minions Paradise Brazil — projeto de fãs dedicado à nostalgia de Minions Paradise.">
-  <title>Minions Paradise Brazil</title>
+  <meta name="theme-color" content="#073b35">
+  <meta name="description" content="Minions Paradise Brazil — projeto independente de preservação, pesquisa e revival de Minions Paradise.">
+  <title>Minions Paradise Brazil | O paraíso continua</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="announcement">
+    🍌 Um paraíso que merece ser lembrado.
+    <a href="#projeto">Conheça o projeto ↗</a>
+  </div>
+
   <header class="header">
-    <a href="#inicio" class="logo">
-      <span class="logo-icon">🍌</span>
-      <span>MINIONS <b>PARADISE</b><small>BRAZIL</small></span>
+    <a class="brand" href="#inicio" aria-label="Minions Paradise Brazil, início">
+      <span class="brand-icon">🍌</span>
+      <span>MINIONS PARADISE <b>BRAZIL</b></span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle"
-      aria-label="Abrir menu" aria-expanded="false">
-      ☰
-    </button>
+    <button class="menu-toggle" id="menu-toggle"
+      aria-label="Abrir menu" aria-expanded="false">☰</button>
 
-    <nav class="nav" id="navigation">
-      <a href="#inicio">Início</a>
+    <nav class="nav" id="nav">
       <a href="#projeto">O projeto</a>
-      <a href="#novidades">Novidades</a>
+      <a href="#progresso">Progresso</a>
+      <a href="#laboratorio">Laboratório</a>
       <a href="#equipe">Equipe</a>
-      <a href="#downloads">Downloads</a>
+      <a class="nav-cta" href="#acompanhar">Acompanhar ↗</a>
     </nav>
-    <a href="#servidor" class="header-button">Servidor</a>
   </header>
 
   <main>
     <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
       <div class="hero-content">
-        <span class="eyebrow">🌴 UM PARAÍSO DE NOSTALGIA</span>
-        <h1>O PARAÍSO<br>ESTÁ <span>DE VOLTA?</span></h1>
-        <p>
-          Uma iniciativa de fãs para preservar a lembrança de
-          Minions Paradise e explorar a possibilidade de uma nova aventura.
+        <div class="eyebrow"><span class="pulse"></span> PROJETO INDEPENDENTE DE FÃS</div>
+        <h1>O PARAÍSO<br>AINDA <span>VIVE.</span></h1>
+        <p class="hero-description">
+          Uma ilha, muitas bananas e memórias que não queremos perder.
+          Estamos explorando caminhos para preservar e recuperar a
+          experiência de Minions Paradise.
         </p>
         <div class="hero-actions">
-          <a href="#projeto" class="button button-dark">Conheça o projeto ↗</a>
-          <a href="#novidades" class="button button-outline">Ver novidades</a>
+          <a class="button button-yellow" href="#projeto">Explorar o projeto <span>↗</span></a>
+          <a class="button button-outline" href="#progresso">Ver progresso ↓</a>
         </div>
         <div class="hero-note">
-          <span class="status-dot"></span>
-          Projeto independente em desenvolvimento
+          <span>🌴</span> Pesquisa, desenvolvimento e nostalgia.
         </div>
       </div>
 
-      <div class="island-art" aria-label="Ilustração tropical da ilha">
+      <div class="island-card" aria-label="Ilustração tropical da ilha">
         <div class="sun"></div>
-        <div class="cloud cloud-one"></div>
-        <div class="cloud cloud-two"></div>
-        <div class="sea"></div>
-        <div class="island"></div>
-        <div class="palm palm-one">🌴</div>
-        <div class="palm palm-two">🌴</div>
-        <div class="palm palm-three">🌴</div>
-        <div class="sand"></div>
-        <div class="beach-ball">🏖️</div>
-        <div class="banana">🍌</div>
+        <div class="bird bird-one">⌁</div>
+        <div class="bird bird-two">⌁</div>
+        <div class="island">
+          <div class="island-palm palm-left">
+            <span class="palm-leaves">✳</span><span class="palm-trunk"></span>
+          </div>
+          <div class="island-palm palm-right">
+            <span class="palm-leaves">✳</span><span class="palm-trunk"></span>
+          </div>
+          <div class="hut">🏝️</div>
+          <div class="banana banana-one">🍌</div>
+          <div class="banana banana-two">🍌</div>
+        </div>
+        <div class="ocean ocean-one"></div>
+        <div class="ocean ocean-two"></div>
+        <div class="island-caption">
+          <span class="caption-dot"></span>
+          <span>DESTINO: ILHA PARADISE</span>
+          <span>001</span>
+        </div>
       </div>
 
       <div class="hero-bottom">
-        <span>UMA ILHA. MUITAS MEMÓRIAS.</span>
-        <span>DESENVOLVIDO COM PAIXÃO 💛</span>
+        <span>FEITO COM NOSTALGIA NO BRASIL 🇧🇷</span>
+        <a href="#projeto">DESCUBRA A INICIATIVA ↓</a>
       </div>
     </section>
 
-    <section class="section project-section" id="projeto">
+    <section class="ticker" aria-label="Temas do projeto">
+      <div class="ticker-track">
+        <span>PRESERVAÇÃO DIGITAL</span> ✳
+        <span>MEMÓRIAS DE UMA ILHA</span> ✳
+        <span>TECNOLOGIA E PESQUISA</span> ✳
+        <span>UM PARAÍSO PARA RECORDAR</span> ✳
+        <span>PRESERVAÇÃO DIGITAL</span> ✳
+        <span>MEMÓRIAS DE UMA ILHA</span> ✳
+        <span>TECNOLOGIA E PESQUISA</span> ✳
+        <span>UM PARAÍSO PARA RECORDAR</span> ✳
+      </div>
+    </section>
+
+    <section class="section about" id="projeto">
       <div class="section-heading">
-        <span class="eyebrow">01 / NOSSA MISSÃO</span>
-        <h2>Mais que um jogo.<br><span>Uma memória.</span></h2>
+        <span class="section-tag">01 / SOBRE O PROJETO</span>
+        <h2>Não é só um jogo.<br>É uma <span>memória.</span></h2>
       </div>
 
-      <div class="project-grid">
-        <article class="feature-card feature-yellow">
-          <div class="feature-icon">🏝️</div>
-          <h3>Uma ilha inesquecível</h3>
-          <p>Relembrando as construções, os personagens e as aventuras que fizeram parte do jogo original.</p>
-        </article>
-        <article class="feature-card feature-blue">
-          <div class="feature-icon">🛠️</div>
-          <h3>Feito pela comunidade</h3>
-          <p>Um projeto independente que busca estudar, desenvolver e testar uma experiência de revival.</p>
-        </article>
-        <article class="feature-card feature-pink">
-          <div class="feature-icon">💛</div>
-          <h3>Nostalgia viva</h3>
-          <p>Compartilhando novidades e informações sobre o progresso do projeto com outros fãs.</p>
-        </article>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            Minions Paradise marcou uma época para quem gostava de construir
+            uma ilha tropical, descobrir atividades e acompanhar os Minions.
+            Com o encerramento do serviço original, essa experiência ficou
+            inacessível da forma como foi criada.
+          </p>
+          <p>
+            O Minions Paradise Brazil nasceu da vontade de estudar como
+            preservar essa experiência, pesquisar a comunicação do jogo e
+            desenvolver uma infraestrutura independente para testes.
+          </p>
+          <a class="text-link" href="#laboratorio">Conheça o laboratório <span>→</span></a>
+        </div>
+
+        <div class="memory-card">
+          <div class="memory-top"><span>ARQUIVO DE MEMÓRIAS</span><span>MP.BR_001</span></div>
+          <div class="memory-emoji">🌴 🍌 🌊</div>
+          <h3>Uma ilha que ficou na história.</h3>
+          <p>Preservar o conhecimento também é uma forma de manter viva uma lembrança.</p>
+          <div class="memory-footer"><span>REGISTRO DIGITAL</span><span>BRASIL · 2026</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="section news-section" id="novidades">
-      <div class="section-title-row">
-        <div class="section-heading">
-          <span class="eyebrow">02 / DIÁRIO DA ILHA</span>
-          <h2>Últimas <span>novidades</span></h2>
-        </div>
-        <span class="coming-label">ATUALIZAÇÕES DO PROJETO</span>
+    <section class="section progress-section" id="progresso">
+      <div class="section-heading">
+        <span class="section-tag">02 / DIÁRIO DE DESENVOLVIMENTO</span>
+        <h2>Construindo o caminho<br>de <span>volta à ilha.</span></h2>
+        <p class="section-intro">O revival é um processo experimental. Cada etapa precisa ser investigada, implementada e testada.</p>
       </div>
 
-      <div class="news-grid">
-        <article class="news-card">
-          <div class="news-image news-image-one">🌴</div>
-          <div class="news-body">
-            <span class="tag tag-green">PROJETO</span>
-            <h3>O início de uma nova jornada</h3>
-            <p>O projeto começa com o objetivo de investigar e desenvolver uma experiência independente inspirada no jogo.</p>
-            <span class="news-date">Diário de desenvolvimento</span>
-          </div>
+      <div class="progress-grid">
+        <article class="progress-card">
+          <span class="card-number">01</span>
+          <div class="progress-icon">🔎</div>
+          <span class="status status-research">PESQUISA</span>
+          <h3>Análise do jogo</h3>
+          <p>Investigar arquivos, configurações e protocolos para entender como o cliente se comunica.</p>
         </article>
 
-        <article class="news-card">
-          <div class="news-image news-image-two">🖥️</div>
-          <div class="news-body">
-            <span class="tag tag-blue">TECNOLOGIA</span>
-            <h3>Construindo nossa infraestrutura</h3>
-            <p>Trabalhando na estrutura do site, nos serviços próprios e nos testes necessários para o revival.</p>
-            <span class="news-date">Diário de desenvolvimento</span>
-          </div>
+        <article class="progress-card">
+          <span class="card-number">02</span>
+          <div class="progress-icon">🖥️</div>
+          <span class="status status-lab">EXPERIMENTAL</span>
+          <h3>Servidor próprio</h3>
+          <p>Desenvolver endpoints de teste e estudar o fluxo de conexão do cliente.</p>
         </article>
 
-        <article class="news-card">
-          <div class="news-image news-image-three">🍌</div>
-          <div class="news-body">
-            <span class="tag tag-yellow">COMUNIDADE</span>
-            <h3>Uma comunidade de fãs</h3>
-            <p>Um espaço para acompanhar o desenvolvimento e celebrar a nostalgia de Minions Paradise.</p>
-            <span class="news-date">Novidades em breve</span>
+        <article class="progress-card">
+          <span class="card-number">03</span>
+          <div class="progress-icon">🔗</div>
+          <span class="status status-planned">EM INVESTIGAÇÃO</span>
+          <h3>Compatibilidade</h3>
+          <p>Investigar carregamento, configuração, sessão e sincronização de dados.</p>
+        </article>
+
+        <article class="progress-card">
+          <span class="card-number">04</span>
+          <div class="progress-icon">🏝️</div>
+          <span class="status status-planned">OBJETIVO</span>
+          <h3>Experiência jogável</h3>
+          <p>Trabalhar para chegar a uma demonstração funcional, conforme a viabilidade técnica.</p>
+        </article>
+      </div>
+      <p class="small-disclaimer">Os cartões descrevem as áreas do projeto, não uma certificação de que todas as etapas estejam concluídas.</p>
+    </section>
+
+    <section class="lab-section" id="laboratorio">
+      <div class="lab-inner">
+        <div class="lab-copy">
+          <span class="section-tag">03 / POR DENTRO DO LABORATÓRIO</span>
+          <h2>Por trás da ilha,<br>existe <span>tecnologia.</span></h2>
+          <p>O trabalho envolve análise técnica, desenvolvimento de serviços e testes de compatibilidade em ambiente controlado.</p>
+          <a class="button button-yellow" href="#faq">Entender o trabalho ↗</a>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="terminal-dots"><i></i><i></i><i></i></div>
+            <span>paradise-lab / console</span>
+            <span class="terminal-lock">LOCAL</span>
           </div>
+          <div class="terminal-body">
+            <p class="terminal-comment"># ambiente demonstrativo do projeto</p>
+            <p><span class="terminal-green">project</span> = <span class="terminal-yellow">"Minions Paradise Brazil"</span></p>
+            <p><span class="terminal-green">focus</span> = [</p>
+            <p class="indent"><span class="terminal-yellow">"API e serviços"</span>,</p>
+            <p class="indent"><span class="terminal-yellow">"configuração do cliente"</span>,</p>
+            <p class="indent"><span class="terminal-yellow">"compatibilidade"</span></p>
+            <p>]</p>
+            <p class="terminal-comment"># estado ilustrativo, não é uma conexão ao servidor</p>
+            <p><span class="terminal-green">print</span>(<span class="terminal-yellow">"Pesquisa em andamento..."</span>)</p>
+            <div class="terminal-output"><span>›</span> Pesquisa em andamento<span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section values-section">
+      <div class="section-heading">
+        <span class="section-tag">04 / NOSSOS PRINCÍPIOS</span>
+        <h2>Pequenos Minions.<br><span>Grandes objetivos.</span></h2>
+      </div>
+      <div class="values-grid">
+        <article class="value-item">
+          <span>📚</span>
+          <h3>Preservar</h3>
+          <p>Registrar conhecimento técnico e a história de um jogo que marcou jogadores.</p>
+        </article>
+        <article class="value-item">
+          <span>🧪</span>
+          <h3>Experimentar</h3>
+          <p>Testar hipóteses com transparência, sem confundir protótipos com recursos prontos.</p>
+        </article>
+        <article class="value-item">
+          <span>🤝</span>
+          <h3>Compartilhar</h3>
+          <p>Documentar o desenvolvimento e compartilhar novidades verificadas.</p>
         </article>
       </div>
     </section>
 
     <section class="team-section" id="equipe">
-      <div class="team-content">
-        <span class="eyebrow">03 / QUEM FAZ ACONTECER</span>
-        <h2>Pequena equipe.<br><span>Grande missão.</span></h2>
-        <p>
-          O projeto é conduzido de forma independente, com foco em
-          programação, pesquisa, testes e preservação da memória do jogo.
-        </p>
-        <div class="team-tags">
-          <span>💻 Desenvolvimento</span>
-          <span>🔧 Infraestrutura</span>
-          <span>🌴 Comunidade</span>
-        </div>
-      </div>
-      <div class="team-visual">
-        <div class="team-circle">🍌</div>
-        <span class="floating floating-one">💻</span>
-        <span class="floating floating-two">🌴</span>
-        <span class="floating floating-three">⭐</span>
-      </div>
-    </section>
-
-    <section class="section downloads-section" id="downloads">
-      <div class="download-panel">
+      <div class="team-inner">
         <div>
-          <span class="eyebrow">04 / CENTRAL DE DOWNLOADS</span>
-          <h2>Sua próxima aventura<br><span>começa aqui.</span></h2>
-          <p>
-            Os arquivos serão disponibilizados quando houver uma versão
-            de teste preparada e segura para distribuição.
-          </p>
-          <button class="button button-dark" id="downloadButton" disabled>
-            Downloads ainda não disponíveis
-          </button>
-          <small class="download-note">Nenhum APK oficial ou versão jogável está sendo oferecido por esta página no momento.</small>
+          <span class="section-tag">05 / QUEM FAZ ACONTECER</span>
+          <h2>Uma ideia movida<br>pela <span>comunidade.</span></h2>
         </div>
-        <div class="download-illustration">📦<span>🍌</span></div>
-      </div>
-    </section>
-
-    <section class="section server-section" id="servidor">
-      <div class="section-heading">
-        <span class="eyebrow">05 / INFRAESTRUTURA</span>
-        <h2>Status do <span>servidor</span></h2>
-        <p>Esta página ainda não consulta o servidor real.</p>
-      </div>
-
-      <div class="server-card">
-        <div class="server-main">
-          <span class="server-indicator"></span>
+        <div class="team-card">
+          <div class="team-avatar">🍌</div>
           <div>
-            <h3>Minions Paradise Revival</h3>
-            <p id="serverMessage">Aguardando integração com a API</p>
+            <span class="team-label">CRIADOR DO PROJETO</span>
+            <h3>Minions Paradise Brazil</h3>
+            <p>Um projeto independente, feito por fã, com foco em pesquisa, desenvolvimento e preservação digital.</p>
           </div>
         </div>
-        <span class="server-badge" id="serverStatus">NÃO CONECTADO</span>
       </div>
-      <p class="server-footnote">
-        O estado exibido é informativo. Não representa uma verificação
-        em tempo real da disponibilidade do servidor.
-      </p>
     </section>
 
-    <section class="final-cta">
-      <span>🍌 🌴 🍌</span>
-      <h2>A ilha ainda vive<br>na nossa memória.</h2>
-      <p>Acompanhe o projeto e faça parte dessa jornada.</p>
-      <a href="#inicio" class="button button-dark">Voltar ao topo ↑</a>
+    <section class="section faq-section" id="faq">
+      <div class="section-heading">
+        <span class="section-tag">06 / PERGUNTAS FREQUENTES</span>
+        <h2>Dúvidas da <span>ilha.</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>O jogo já pode ser jogado? <span>+</span></summary>
+          <p>Este site não anuncia uma versão jogável. O desenvolvimento é experimental e depende da resolução de questões técnicas.</p>
+        </details>
+        <details>
+          <summary>O projeto é oficial da EA? <span>+</span></summary>
+          <p>Não. É uma iniciativa independente de fãs, sem vínculo, patrocínio ou aprovação da Electronic Arts ou dos titulares de Minions.</p>
+        </details>
+        <details>
+          <summary>Por que não existe um botão de download? <span>+</span></summary>
+          <p>Não há um pacote autorizado anunciado aqui. A seção de downloads só deverá ser adicionada quando houver material apropriado e seguro para disponibilizar.</p>
+        </details>
+        <details>
+          <summary>Como posso acompanhar as novidades? <span>+</span></summary>
+          <p>Acompanhe o repositório do projeto no GitHub. As novidades serão publicadas quando houver avanços que possam ser confirmados.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="final-cta" id="acompanhar">
+      <div class="cta-banana">🍌</div>
+      <span class="section-tag">NOS VEMOS NA ILHA?</span>
+      <h2>O próximo capítulo<br>começa <span>aqui.</span></h2>
+      <p>Acompanhe a evolução de um projeto feito para manter viva uma memória dos games.</p>
+      <a class="button button-dark" id="github-link" href="https://github.com/thurdripii" target="_blank" rel="noopener noreferrer">
+        Acompanhar no GitHub ↗
+      </a>
+      <small>O progresso é gradual. Obrigado por fazer parte dessa história.</small>
     </section>
   </main>
 
   <footer class="footer">
-    <a href="#inicio" class="logo footer-logo">
-      <span class="logo-icon">🍌</span>
-      <span>MINIONS <b>PARADISE</b><small>BRAZIL</small></span>
-    </a>
-    <p>Um projeto independente feito por fãs.</p>
-    <p class="disclaimer">
-      Não afiliado, patrocinado ou aprovado pela Universal, Illumination,
-      Electronic Arts ou seus parceiros. Minions Paradise e suas marcas
-      pertencem aos respectivos titulares.
-    </p>
-    <span class="copyright">© <span id="currentYear"></span> Minions Paradise Brazil</span>
+    <a class="brand footer-brand" href="#inicio"><span class="brand-icon">🍌</span><span>MINIONS PARADISE <b>BRAZIL</b></span></a>
+    <p>Uma iniciativa independente de preservação digital.</p>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Minions Paradise Brazil</span>
+      <a href="#inicio">VOLTAR AO TOPO ↑</a>
+    </div>
+    <p class="legal">Projeto de fãs não oficial. Não afiliado à EA, à Illumination ou à Universal. Minions Paradise e os personagens relacionados pertencem aos respectivos titulares.</p>
   </footer>
 </body>
 </html>
